@@ -1,9 +1,7 @@
 import React from 'react'
 
-function Screened() {
+export default function Screened() {
   return(
-    <h1>Navbar</h1>
+    <h1>Screened</h1>
   )
 }
-
-export default Screened

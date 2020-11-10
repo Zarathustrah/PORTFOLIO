@@ -1,9 +1,8 @@
 import React from 'react'
 
-function Nalu() {
+export default function Nalu() {
   return(
-    <h1>Navbar</h1>
+    <h1>Nalu</h1>
   )
 }
 
-export default Nalu

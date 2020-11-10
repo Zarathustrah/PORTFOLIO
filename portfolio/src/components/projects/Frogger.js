@@ -1,9 +1,8 @@
 import React from 'react'
 
-function Frogger() {
+export default function Frogger() {
   return(
-    <h1>Navbar</h1>
+    <h1>Frogger</h1>
   )
 }
 
-export default Frogger
