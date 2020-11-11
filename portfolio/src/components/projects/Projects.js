@@ -5,10 +5,9 @@ import Nalu from './Nalu'
 const Projects = () => {
   return (
   <Grid container spacing={2}>
-    <Grid item xs={10}>
+    <Grid item xs={12}>
       <Nalu />
     </Grid>
-
   </Grid>
 
   )
