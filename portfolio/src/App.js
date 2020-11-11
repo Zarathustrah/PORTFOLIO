@@ -1,9 +1,7 @@
 import './styles/main.scss'
 import Navbar from './components/common/Navbar'
-import {
-  Button, 
-  Typography
-} from '@material-ui/core'
+import { Typography, Grid } from '@material-ui/core'
+
 
 import { makeStyles } from '@material-ui/core/styles'
 
@@ -19,10 +17,7 @@ export default function App() {
   return (
     <>
     <Navbar />
-   <h1>Hello World</h1>
-   <Button variant="contained" color="primary">
-      Hello World
-    </Button>
+    
     <Typography 
       className={classes.textSex}
       variant='h1'>
