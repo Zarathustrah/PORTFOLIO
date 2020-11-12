@@ -15,7 +15,7 @@ export default function Navbar() {
 
   return(
     <AppBar 
-    position='fixed'
+    position='static'
     style={{
       boxShadow: 'none',
       background: 'transparent',
