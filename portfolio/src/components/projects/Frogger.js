@@ -8,7 +8,6 @@ export default function Frogger() {
     <h1>Frogger</h1>
     <h1>Frogger</h1>
     <h1>Frogger</h1>
-    <h1>Frogger</h1>
     </>
   )
 }
