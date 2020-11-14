@@ -1,51 +1,50 @@
 import React from 'react'
-import { Grid } from '@material-ui/core'
-import Paper   from '@material-ui/core/Paper'
 import { makeStyles } from '@material-ui/core/styles'
+import Paper from '@material-ui/core/Paper'
+import Grid from '@material-ui/core/Grid'
 // import Nalu from './Nalu'
 // import Frogger from './Frogger'
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
   },
   paper: {
-    padding: theme.spacing(null),
+    padding: theme.spacing(1),
     textAlign: 'center',
-    color: theme.palette.text.secondary,
+    color: 'white',
+    backgroundColor: '#FF00CC'
   },
-}));
+}))
 
 
-const Projects = () => {
-  const classes = useStyles
+export default function Projects() {
+  const classes = useStyles()
 
   return (
     <div className={classes.root}>
   <Grid container spacing={1}>
     <Grid item xs={12}>
-      <Paper className={classes.paper}>Nalu</Paper>
+      <Paper className={classes.paper} variant='' square>Nalu</Paper>
     </Grid>
     <Grid item xs={12} sm={6}>
-      <Paper className={classes.paper}>Frogger</Paper>
+      <Paper className={classes.paper} variant='' square>Frogger</Paper>
     </Grid>
     <Grid item xs={12} sm={6}>
-      <Paper className={classes.paper}>Screened</Paper>
+      <Paper className={classes.paper} variant='' square>Screened</Paper>
     </Grid>
     <Grid item xs={12}>
-      <Paper className={classes.paper}>Skills</Paper>
+      <Paper className={classes.paper} variant='' square>Skills</Paper>
     </Grid>
     <Grid item xs={12} sm={6}>
-      <Paper className={classes.paper}>Bio</Paper>
+      <Paper className={classes.paper} variant='' square>Bio</Paper>
     </Grid>
     <Grid item xs={12} sm={6}>
-      <Paper className={classes.paper}>Contact</Paper>
+      <Paper className={classes.paper} variant='' square>Contact</Paper>
     </Grid>
-
   </Grid>
   </div>
 
   )
 }
 
-export default Projects
