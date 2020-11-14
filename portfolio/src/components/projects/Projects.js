@@ -2,7 +2,7 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import Paper from '@material-ui/core/Paper'
 import Grid from '@material-ui/core/Grid'
-// import Nalu from './Nalu'
+import Nalu from './Nalu'
 // import Frogger from './Frogger'
 
 const useStyles = makeStyles(theme => ({
@@ -13,7 +13,7 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(1),
     textAlign: 'center',
     color: 'white',
-    backgroundColor: '#FF00CC'
+    backgroundColor: '#188DA5'
   },
 }))
 
@@ -25,7 +25,11 @@ export default function Projects() {
     <div className={classes.root}>
   <Grid container spacing={1}>
     <Grid item xs={12}>
-      <Paper className={classes.paper} variant='' square>Nalu</Paper>
+      <Paper 
+      className={classes.paper} 
+      variant='' square>
+        <Nalu />
+      </Paper>
     </Grid>
     <Grid item xs={12} sm={6}>
       <Paper className={classes.paper} variant='' square>Frogger</Paper>
