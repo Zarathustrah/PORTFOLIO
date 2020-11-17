@@ -4,8 +4,8 @@ import { makeStyles } from '@material-ui/styles'
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    minHeight: '40vh',
-    backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/Nalu.jpg'})`,
+    minHeight: '',
+    backgroundImage: `url('/assets/Nalu.jpg')`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover'
   }

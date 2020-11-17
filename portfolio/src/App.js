@@ -1,4 +1,3 @@
-import './styles/main.scss'
 import Navbar from './components/common/Navbar'
 import Projects from './components/projects/Projects'
 // import { Typography, Grid } from '@material-ui/core'
