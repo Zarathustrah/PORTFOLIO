@@ -5,7 +5,7 @@ import { makeStyles } from '@material-ui/styles'
 const useStyles = makeStyles((theme) => ({
   root: {
     minHeight: '',
-    backgroundImage: `url('/assets/Nalu.jpg')`,
+    backgroundImage: '/static/images/Nalu.jpg',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover'
   }

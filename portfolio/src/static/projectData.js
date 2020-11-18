@@ -2,31 +2,31 @@ const projectData = [
    {
      name: 'Nalu',
      description: 'One-week group project to build a full-stack MERN app',
-     img: '/static/images/Nalu.jpg',
+     image: '/assets/Nalu.jpg',
      cols: 12,     
    },
    {
     name: 'Frogger',
     description: 'One-week solo project to build a retro game in vanilla JS',
-    img: '/static/images/Frogger.jpg',
+    image: '/assets/Frogger.jpg',
     cols: 6,     
   },
   {
     name: 'Director Dictator',
     description: 'Two-day hackathon to build an API-based React app',
-    img: '/static/images/Screened.jpg',
+    image: '/assets/Dictators.jpg',
     cols: 6,     
   },
   {
     name: 'Bio',
     description: '',
-    img: '/static/images/Bio.jpg',
+    image: '/assets/Bio.jpg',
     cols: 6,     
   },
   {
     name: 'Contact',
     description: '',
-    img: '/static/images/Contact.jpg',
+    image: '/assets/Contact.jpg',
     cols: 6,     
   },
  ]

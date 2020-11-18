@@ -2,7 +2,7 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import Paper from '@material-ui/core/Paper'
 import Grid from '@material-ui/core/Grid'
-import projectData from '../../static/projectData'
+// import projectData from '../../static/projectData'
 import Nalu from './Nalu'
 // import Frogger from './Frogger'
 
@@ -28,24 +28,24 @@ export default function Projects() {
     <Grid item xs={12}>
       <Paper 
       className={classes.paper} 
-      variant='' square>
+      square>
         <Nalu />
       </Paper>
     </Grid>
     <Grid item xs={12} sm={6}>
-      <Paper className={classes.paper} variant='' square>Frogger</Paper>
+      <Paper className={classes.paper} square>Frogger</Paper>
     </Grid>
     <Grid item xs={12} sm={6}>
-      <Paper className={classes.paper} variant='' square>Screened</Paper>
+      <Paper className={classes.paper} square>Screened</Paper>
     </Grid>
     <Grid item xs={12}>
-      <Paper className={classes.paper} variant='' square>Skills</Paper>
+      <Paper className={classes.paper} square>Skills</Paper>
     </Grid>
     <Grid item xs={12} sm={6}>
-      <Paper className={classes.paper} variant='' square>Bio</Paper>
+      <Paper className={classes.paper} square>Bio</Paper>
     </Grid>
     <Grid item xs={12} sm={6}>
-      <Paper className={classes.paper} variant='' square>Contact</Paper>
+      <Paper className={classes.paper} square>Contact</Paper>
     </Grid>
   </Grid>
   </div>
