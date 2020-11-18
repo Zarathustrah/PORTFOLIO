@@ -1,9 +1,10 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import GridList from '@material-ui/core/GridList';
-import GridListTile from '@material-ui/core/GridListTile';
-import useMediaQuery from '@material-ui/core/useMediaQuery'
-import projectData from '../../static/projectData';
+import React from 'react'
+import { makeStyles } from '@material-ui/core/styles'
+import GridList from '@material-ui/core/GridList'
+import GridListTile from '@material-ui/core/GridListTile'
+import { createMuiTheme, ThemeProvider, useTheme } from '@material-ui/core/styles';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+import projectData from '../../static/projectData'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -18,11 +19,13 @@ const useStyles = makeStyles((theme) => ({
     width: '100vw',
     height: '100vh',
   },
-}));
+}))
 
-export default function ImageGridList() {
-  const classes = useStyles();
-  
+
+function ImageGridList() {
+  const classes = useStyles()
+  const theme = useTheme()
+  const matches = useMediaQuery(theme.breakpoints.up('sm'))
   
 
   return (
@@ -32,9 +35,20 @@ export default function ImageGridList() {
           <GridListTile key={tile.image} cols={tile.cols}>
             <img src={tile.image} alt={tile.name} />
             <div>{tile.description}</div>
+            <span>{`theme.breakpoints.down('sm') matches: ${matches}`}</span>
           </GridListTile>
         ))}
         </GridList>     
     </div>
+  );
+}
+
+const theme = createMuiTheme()
+
+export default function ThemeHelper() {
+  return (
+    <ThemeProvider theme={theme}>
+      <ImageGridList />
+    </ThemeProvider>
   );
 }
