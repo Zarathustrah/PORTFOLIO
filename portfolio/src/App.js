@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Navbar from './components/common/Navbar'
-import Projects2 from './components/projects/Projects2'
+import Projects from './components/projects/Projects'
 
 
 
@@ -12,7 +12,7 @@ export default function App() {
   return (
     <>
     <Navbar />
-    <Projects2 />
+    <Projects />
     </>
   )
 }

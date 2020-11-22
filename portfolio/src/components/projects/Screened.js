@@ -1,7 +1,33 @@
 import React from 'react'
+import { Card, CardMedia, Typography } from '@material-ui/core'
+import { makeStyles } from '@material-ui/styles'
 
-export default function Screened() {
-  return(
-    <h1>Screened</h1>
+const useStyles = makeStyles({
+  card: {
+    maxWidth: '100vw',
+  },
+  media: {
+    height: '300px',
+    backgroundPosition: 'center' 
+  }
+
+}) 
+
+const Screened = () => {
+  const classes = useStyles()
+
+  return (
+    <Card className={classes.card}>
+      <CardMedia
+      className={classes.media}
+      alt='Various movie stills'
+      image='/images/Screened.jpg'
+      title=''
+      />
+    </Card>
   )
+
+
 }
+
+export default Screened

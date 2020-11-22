@@ -1,10 +1,11 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
-import Paper from '@material-ui/core/Paper'
 import Grid from '@material-ui/core/Grid'
-// import projectData from '../../static/projectData'
 import Nalu from './Nalu'
-// import Frogger from './Frogger'
+import Frogger from './Frogger'
+import Screened from './Screened'
+import About from '../bio/About'
+import Contact from '../bio/Contact'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -26,26 +27,22 @@ export default function Projects() {
     <div className={classes.root}>
   <Grid container spacing={1}>
     <Grid item xs={12}>
-      <Paper 
-      className={classes.paper} 
-      square>
-        <Nalu />
-      </Paper>
+      <Nalu />
     </Grid>
     <Grid item xs={12} sm={6}>
-      <Paper className={classes.paper} square>Frogger</Paper>
+      <Frogger />    
     </Grid>
     <Grid item xs={12} sm={6}>
-      <Paper className={classes.paper} square>Screened</Paper>
+     <Screened />
     </Grid>
     <Grid item xs={12}>
-      <Paper className={classes.paper} square>Skills</Paper>
+      SKILLS
     </Grid>
     <Grid item xs={12} sm={6}>
-      <Paper className={classes.paper} square>Bio</Paper>
+      <About />
     </Grid>
     <Grid item xs={12} sm={6}>
-      <Paper className={classes.paper} square>Contact</Paper>
+      <Contact />
     </Grid>
   </Grid>
   </div>

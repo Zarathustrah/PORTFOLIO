@@ -1,21 +1,33 @@
 import React from 'react'
+import { Card, CardMedia, Typography } from '@material-ui/core'
 import { makeStyles } from '@material-ui/styles'
 
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    minHeight: '',
-    backgroundImage: '/static/images/Nalu.jpg',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover'
+const useStyles = makeStyles({
+  card: {
+    maxWidth: '100vw',
+  },
+  media: {
+    height: '300px',
+    backgroundPosition: 'center' 
   }
-}))
 
-export default function Nalu() {
+}) 
+
+const Nalu = () => {
   const classes = useStyles()
-  return(
-    <div className={classes.root}>
-    </div> 
+
+  return (
+    <Card className={classes.card}>
+      <CardMedia
+      className={classes.media}
+      alt='Breaking waves on beach'
+      image='/images/Nalu.jpg'
+      title=''
+      />
+    </Card>
   )
+
+
 }
 
+export default Nalu
