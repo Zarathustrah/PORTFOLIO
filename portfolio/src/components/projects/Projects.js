@@ -1,5 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
+import { Box } from '@material-ui/core'
 import Grid from '@material-ui/core/Grid'
 import Nalu2 from './Nalu2'
 import Frogger from './Frogger'
@@ -36,7 +37,7 @@ export default function Projects() {
      <Screened />
     </Grid>
     <Grid item xs={12}>
-      SKILLS
+      <Box>SKILLS</Box>
     </Grid>
     <Grid item xs={12} sm={6}>
       <About />
