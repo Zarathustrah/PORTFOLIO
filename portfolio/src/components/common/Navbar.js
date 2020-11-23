@@ -5,11 +5,16 @@ import { AppBar, Toolbar, Typography, Button } from '@material-ui/core/'
 
 
 const useStyles = makeStyles(() =>  ({
-  typographyStyles: {
-    flex: 1
+  typography: {
+    flex: 1,
   }, 
+  buttonTitle: {
+    color: 'white',
+    fontSize: '25px'
+  },
   buttonStyle: {
-    color: 'white'
+    color: 'white',
+    fontSize: '12px'
   }
 }))
 
@@ -24,8 +29,8 @@ export default function Navbar() {
       background: 'transparent',
     }}>
       <Toolbar>
-        <Typography className={classes.typographyStyles}>
-          <Button className={classes.buttonStyle}><strong>Daniel Price</strong></Button>
+        <Typography className={classes.typography}>
+          <Button className={classes.buttonTitle}>Dan Price</Button>
         </Typography>
         <Button className={classes.buttonStyle}>Projects</Button>
         <Button className={classes.buttonStyle}>About</Button>

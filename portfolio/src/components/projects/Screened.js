@@ -22,7 +22,8 @@ const useStyles = makeStyles({
     opacity: '0',
     '&:hover': {
       opacity: '1',
-    }
+    },
+    transition: '0.2s'
   }
 
 })
@@ -34,7 +35,7 @@ export default function Screened() {
     <Box className={classes.root}>
       <CssBaseline />
       <div className={classes.projectInfo}>
-        <h1>Screened</h1>
+        <h1>Director Dictator</h1>
         <p>Add in description here</p>
       </div>
     </Box>

@@ -11,7 +11,6 @@ const useStyles = makeStyles({
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundColor: 'rgba(0,0,0,0.5)',
-    // boxShadow: 'inset 0 0 0 2000px rgba(0, 0, 0, 0.5)'
   },
   projectInfo: {
     height: '300px',
@@ -24,7 +23,8 @@ const useStyles = makeStyles({
     opacity: '0',
     '&:hover': {
       opacity: '1',
-    }
+    },
+    transition: '0.2s'
   }
 
 })
