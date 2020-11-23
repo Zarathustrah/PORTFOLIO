@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/styles'
 const useStyles = makeStyles({
   card: {
     maxWidth: '100vw',
+    backgroundColor: '#1f26ff'
   },
   media: {
     height: '300px',
@@ -13,9 +14,6 @@ const useStyles = makeStyles({
     '&:hover': {
       opacity: '0',
     }
-  },
-  wrapper: {
-    backgroundColor: '#1f26ff',
   },
   projectInfo: {
     opacity: '0',
@@ -31,17 +29,17 @@ const Nalu = () => {
 
   return (
     <Card className={classes.card}>
-      <Box className={classes.wrapper}>
+      {/* <Box className={classes.wrapper}> */}
         <CardMedia
         className={classes.media}
         alt='Breaking waves on beach'
         image='/images/Nalu.jpg'
         title=''
         >
-          <Box className={classes.projectInfo}>
-            Hello
-          </Box>
-        </CardMedia>
+      </CardMedia>
+      {/* </Box> */}
+      <Box className={classes.projectInfo}>
+        Content
       </Box>
     </Card>
   )
