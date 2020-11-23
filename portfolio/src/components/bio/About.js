@@ -22,7 +22,7 @@ const useStyles = makeStyles({
     alignItems: 'center',
     opacity: '0',
     '&:hover': {
-      opacity: '1',
+      opacity: '0.9',
     },
     transition: '0.2s'
   }

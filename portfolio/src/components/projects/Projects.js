@@ -34,7 +34,7 @@ export default function Projects() {
       <Frogger />    
     </Grid>
     <Grid item xs={12} sm={6}>
-     <Screened />
+    <Screened />
     </Grid>
     <Grid item xs={12}>
       <Box>SKILLS</Box>
