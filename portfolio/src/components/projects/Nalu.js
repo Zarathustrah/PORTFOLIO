@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardMedia, Typography } from '@material-ui/core'
+import { Card, CardMedia, Typography, Box } from '@material-ui/core'
 import { makeStyles } from '@material-ui/styles'
 
 const useStyles = makeStyles({
@@ -8,9 +8,22 @@ const useStyles = makeStyles({
   },
   media: {
     height: '300px',
-    backgroundPosition: 'center' 
+    backgroundPosition: 'center', 
+    opacity: '1',
+    '&:hover': {
+      opacity: '0',
+    }
+  },
+  wrapper: {
+    backgroundColor: '#1f26ff',
+  },
+  projectInfo: {
+    opacity: '0',
+    '&:hover': {
+      opacity: '1',
+    }
   }
-
+    
 }) 
 
 const Nalu = () => {
@@ -18,12 +31,18 @@ const Nalu = () => {
 
   return (
     <Card className={classes.card}>
-      <CardMedia
-      className={classes.media}
-      alt='Breaking waves on beach'
-      image='/images/Nalu.jpg'
-      title=''
-      />
+      <Box className={classes.wrapper}>
+        <CardMedia
+        className={classes.media}
+        alt='Breaking waves on beach'
+        image='/images/Nalu.jpg'
+        title=''
+        >
+          <Box className={classes.projectInfo}>
+            Hello
+          </Box>
+        </CardMedia>
+      </Box>
     </Card>
   )
 

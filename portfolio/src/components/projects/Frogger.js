@@ -23,7 +23,8 @@ const Frogger = () => {
       alt='Frogger arcade game'
       image='/images/Frogger.jpg'
       title=''
-      />
+      >One-week solo build of a classic arcade game using vanilla JS and CSS
+      </CardMedia>
     </Card>
   )
 
