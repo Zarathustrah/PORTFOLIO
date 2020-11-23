@@ -1,33 +1,42 @@
 import React from 'react'
-import { Card, CardMedia, Typography } from '@material-ui/core'
 import { makeStyles } from '@material-ui/styles'
+import { Typography, Box, CssBaseline } from '@material-ui/core'
+
 
 const useStyles = makeStyles({
-  card: {
-    maxWidth: '100vw',
-  },
-  media: {
+  root: {
     height: '300px',
-    backgroundPosition: 'center' 
+    background: `url('/images/Contact.jpg')`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  },
+  projectInfo: {
+    height: '300px',
+    background: '#1f26ff',
+    color: 'white',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    opacity: '0',
+    '&:hover': {
+      opacity: '1',
+    }
   }
 
-}) 
+})
 
-const Contact = () => {
+export default function Contact() {
   const classes = useStyles()
 
   return (
-    <Card className={classes.card}>
-      <CardMedia
-      className={classes.media}
-      alt='Breaking waves on beach'
-      image='/images/Contact.jpg'
-      title=''
-      />
-    </Card>
+    <Box className={classes.root}>
+      <CssBaseline />
+      <div className={classes.projectInfo}>
+        <h1>Contact</h1>
+        <p>Add in description here</p>
+      </div>
+    </Box>
   )
-
-
 }
-
-export default Contact

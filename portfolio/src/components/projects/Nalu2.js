@@ -6,7 +6,7 @@ import { Typography, Box, CssBaseline } from '@material-ui/core'
 const useStyles = makeStyles({
   root: {
     height: '300px',
-    backgroundImage: `url('/images/Nalu.jpg')`,
+    background: `url('/images/Nalu.jpg')`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     backgroundPosition: 'center',

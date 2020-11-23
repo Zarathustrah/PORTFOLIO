@@ -9,7 +9,7 @@ const useStyles = makeStyles(() =>  ({
     flex: 1
   }, 
   buttonStyle: {
-    color: '#DC5D49'
+    color: 'white'
   }
 }))
 
