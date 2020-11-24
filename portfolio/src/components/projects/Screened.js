@@ -81,10 +81,12 @@ export default function Screened() {
         justify='center'>
         <IconContext.Provider value={{ size: '1.8rem' }}>
           <div className={classes.linkIcon}>
-            <SiGithub 
+            <a href='https://github.com/Zarathustrah/SEI-Project-3' target='_blank' rel='noopener  noreferrer'>
+            <SiGithub
             href='https://github.com/Zarathustrah/SEI-Project-3'
             target='_blank'
             />
+            </a>
           </div>
           <div className={classes.linkIcon}>
             <FaExternalLinkSquareAlt />
