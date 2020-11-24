@@ -37,7 +37,12 @@ export default function Navbar() {
         <Button className={classes.buttonStyle}>Contact</Button>
       </Toolbar>
       <Box>
-        <h3>Software Engineer</h3>
+        <h3 style={{ 
+        marginLeft: '35px',
+        marginBottom: '20px',
+        }}>
+          Software Engineer
+        </h3>
       </Box>
     </AppBar>
   )
