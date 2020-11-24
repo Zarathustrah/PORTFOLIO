@@ -59,7 +59,7 @@ export default function Screened() {
     <Box className={classes.root}>
       <div className={classes.projectInfo}>
         <h1>Director Dictator</h1>
-        <p>Add in description here</p>
+        <p>Two-day group hackathon to build a movie app</p>
         <Grid 
         container
         direction='row'
