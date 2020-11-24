@@ -1,6 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
-import { AppBar, Toolbar, Typography, Button } from '@material-ui/core/'
+import { AppBar, Toolbar, Typography, Button, Box } from '@material-ui/core/'
 // import { mergeClasses } from '@material-ui/styles'
 
 
@@ -36,6 +36,9 @@ export default function Navbar() {
         <Button className={classes.buttonStyle}>About</Button>
         <Button className={classes.buttonStyle}>Contact</Button>
       </Toolbar>
+      <Box>
+        <h3>Software Engineer</h3>
+      </Box>
     </AppBar>
   )
 }

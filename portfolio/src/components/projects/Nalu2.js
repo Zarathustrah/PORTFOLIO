@@ -23,8 +23,12 @@ const useStyles = makeStyles({
     '&:hover': {
       opacity: '0.9',
     },
-    transition: '0.2s'
-  }
+    transition: '0.2s',
+    // paddingBottom: '80px'
+  },
+  content: {
+    margin: '0'
+  },
 
 })
 
@@ -36,7 +40,7 @@ export default function Nalu2() {
       <CssBaseline />
       <div className={classes.projectInfo}>
         <h1>Nalu</h1>
-        <p>Add in description here</p>
+        <p className={classes.content}>One-week group build of a MERN full-stack surfing community app</p>
       </div>
     </Box>
   )
