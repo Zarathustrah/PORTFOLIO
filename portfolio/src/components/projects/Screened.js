@@ -1,6 +1,16 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/styles'
-import { Typography, Box, CssBaseline } from '@material-ui/core'
+import { Typography, Box, Grid } from '@material-ui/core'
+import { IconContext } from "react-icons"
+
+import { 
+  SiSass,
+  SiReact,
+  SiGithub,  
+} from "react-icons/si"
+
+import { FaExternalLinkSquareAlt } from "react-icons/fa"
+
 
 
 const useStyles = makeStyles({
@@ -24,6 +34,20 @@ const useStyles = makeStyles({
       opacity: '0.9',
     },
     transition: '0.2s'
+  },
+  icon: {
+    fontSize: '8px',
+    textAlign: 'center',
+    margin: '20px'
+  },
+  linkIcon: {
+    fontSize: '8px',
+    textAlign: 'center',
+    margin: '15px',
+    color: 'white',
+    '&:hover': {
+      color: '#ff0127',
+    },
   }
 
 })
@@ -33,10 +57,40 @@ export default function Screened() {
 
   return (
     <Box className={classes.root}>
-      <CssBaseline />
       <div className={classes.projectInfo}>
         <h1>Director Dictator</h1>
         <p>Add in description here</p>
+        <Grid 
+        container
+        direction='row'
+        justify='center'>
+          <IconContext.Provider value={{ size: '1.2rem' }}>
+            <div className={classes.icon}>
+              <SiReact />
+              <p>React</p>
+            </div>
+            <div className={classes.icon}>
+              <SiSass />
+              <p>Sass</p>
+            </div>
+          </IconContext.Provider>
+        </Grid>
+        <Grid 
+        container
+        direction='row'
+        justify='center'>
+        <IconContext.Provider value={{ size: '1.8rem' }}>
+          <div className={classes.linkIcon}>
+            <SiGithub 
+            href='https://github.com/Zarathustrah/SEI-Project-3'
+            target='_blank'
+            />
+          </div>
+          <div className={classes.linkIcon}>
+            <FaExternalLinkSquareAlt />
+          </div>
+        </IconContext.Provider>
+        </Grid>
       </div>
     </Box>
   )

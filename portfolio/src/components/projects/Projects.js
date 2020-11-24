@@ -2,7 +2,7 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Box } from '@material-ui/core'
 import Grid from '@material-ui/core/Grid'
-import Nalu2 from './Nalu2'
+import Nalu from './Nalu'
 import Frogger from './Frogger'
 import Screened from './Screened'
 import About from '../bio/About'
@@ -28,7 +28,7 @@ export default function Projects() {
     <div className={classes.root}>
   <Grid container spacing={1}>
     <Grid item xs={12}>
-      <Nalu2 />
+      <Nalu />
     </Grid>
     <Grid item xs={12} sm={6}>
       <Frogger />    
