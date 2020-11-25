@@ -29,7 +29,7 @@ export default function Projects() {
   return (
     <div className={classes.root}>
   <Grid container spacing={1}>
-    <Grid item xs={12}>
+    <Grid item xs={12} id='projects'>
       <Nalu />
     </Grid>
     <Grid item xs={12} sm={6}>
@@ -41,10 +41,10 @@ export default function Projects() {
     <Grid item xs={12}>
       <Box checked={checked}>SKILLS</Box>
     </Grid>
-    <Grid item xs={12} sm={6}>
+    <Grid item xs={12} sm={6} id='about'>
       <About />
     </Grid>
-    <Grid item xs={12} sm={6}>
+    <Grid item xs={12} sm={6} id='contact'>
       <Contact />
     </Grid>
   </Grid>

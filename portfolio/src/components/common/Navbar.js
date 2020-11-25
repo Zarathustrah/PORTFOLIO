@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { AppBar, Toolbar, Typography, Button, Box } from '@material-ui/core/'
+import { Link as Scroll } from 'react-scroll'
 
 
 
@@ -36,9 +37,15 @@ export default function Navbar() {
         <Typography className={classes.typography}>
           <Button className={classes.buttonTitle}>Dan Price</Button>
         </Typography>
-        <Button className={classes.buttonStyle}>Projects</Button>
-        <Button className={classes.buttonStyle}>About</Button>
-        <Button className={classes.buttonStyle}>Contact</Button>
+        <Scroll to='projects' smooth={true}>
+          <Button className={classes.buttonStyle}>Projects</Button>
+        </Scroll>
+        <Scroll to='about' smooth={true}>
+          <Button className={classes.buttonStyle}>About</Button>
+        </Scroll>
+        <Scroll to='contact' smooth={true}>
+          <Button className={classes.buttonStyle}>Contact</Button>
+        </Scroll>
       </Toolbar>
       <Box id='a'>
         <h3 style={{ 
