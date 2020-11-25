@@ -8,6 +8,7 @@ import Frogger from './Frogger'
 import Screened from './Screened'
 import About from '../bio/About'
 import Contact from '../bio/Contact'
+import Skills from '../bio/Skills'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -36,10 +37,10 @@ export default function Projects() {
       <Frogger />    
     </Grid>
     <Grid item xs={12} sm={6}>
-    <Screened />
+      <Screened />
     </Grid>
     <Grid item xs={12}>
-      <Box checked={checked}>SKILLS</Box>
+      <Skills />
     </Grid>
     <Grid item xs={12} sm={6} id='about'>
       <About />

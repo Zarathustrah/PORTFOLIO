@@ -1,6 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/styles'
-import { Typography, Box, CssBaseline } from '@material-ui/core'
+import { Typography, Box } from '@material-ui/core'
 
 
 const useStyles = makeStyles({
@@ -33,7 +33,6 @@ export default function Contact() {
 
   return (
     <Box className={classes.root}>
-      <CssBaseline />
       <div className={classes.projectInfo}>
         <h1>Contact</h1>
         <p>Add in description here</p>
