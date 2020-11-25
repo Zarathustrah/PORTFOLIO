@@ -1,6 +1,7 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Box } from '@material-ui/core'
+import useWindowPosition from '../../hooks/useWindowPosition'
 import Grid from '@material-ui/core/Grid'
 import Nalu from './Nalu'
 import Frogger from './Frogger'
@@ -23,6 +24,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function Projects() {
   const classes = useStyles()
+  const checked = useWindowPosition('a')
 
   return (
     <div className={classes.root}>
@@ -37,7 +39,7 @@ export default function Projects() {
     <Screened />
     </Grid>
     <Grid item xs={12}>
-      <Box>SKILLS</Box>
+      <Box checked={checked}>SKILLS</Box>
     </Grid>
     <Grid item xs={12} sm={6}>
       <About />

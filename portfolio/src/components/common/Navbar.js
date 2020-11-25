@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { AppBar, Toolbar, Typography, Button, Box } from '@material-ui/core/'
-// import { mergeClasses } from '@material-ui/styles'
+
 
 
 const useStyles = makeStyles(() =>  ({
@@ -20,6 +20,10 @@ const useStyles = makeStyles(() =>  ({
 
 export default function Navbar() {
   const classes = useStyles()
+  const [checked, setChecked] = useState(false)
+  useEffect(() => {
+    setChecked(true)
+  }, [])
 
   return(
     <AppBar 
@@ -36,7 +40,7 @@ export default function Navbar() {
         <Button className={classes.buttonStyle}>About</Button>
         <Button className={classes.buttonStyle}>Contact</Button>
       </Toolbar>
-      <Box>
+      <Box id='a'>
         <h3 style={{ 
         marginLeft: '35px',
         marginBottom: '20px',
