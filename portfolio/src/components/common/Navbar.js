@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { makeStyles } from '@material-ui/core/styles'
+import { makeStyles, useTheme } from '@material-ui/core/styles'
 import { AppBar, Toolbar, Typography, Button, Box, Collapse } from '@material-ui/core/'
+import useMediaQuery from '@material-ui/core/useMediaQuery'
 import { Link as Scroll } from 'react-scroll'
 
 
@@ -24,6 +25,9 @@ const useStyles = makeStyles(() =>  ({
 
 export default function Navbar() {
   const classes = useStyles()
+  const theme = useTheme()
+  const isMobile = useMediaQuery(theme.breakpoints.down('xs'))
+  console.log(isMobile)
   const [checked, setChecked] = useState(false)
   useEffect(() => {
     setChecked(true)
