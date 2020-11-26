@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
-import { AppBar, Toolbar, Typography, Button, Box } from '@material-ui/core/'
+import { AppBar, Toolbar, Typography, Button, Box, Collapse } from '@material-ui/core/'
 import { Link as Scroll } from 'react-scroll'
 
 
@@ -47,14 +47,20 @@ export default function Navbar() {
           <Button className={classes.buttonStyle}>Contact</Button>
         </Scroll>
       </Toolbar>
-      <Box id='a'>
-        <h3 style={{ 
-        marginLeft: '35px',
-        marginBottom: '20px',
-        }}>
+      <Collapse
+        in={checked}
+        {...(checked ? { timeout: 1000 } : {})}
+        collapsedHeight={50}
+      >
+        <Box id='a'>
+          <h3 style={{ 
+          marginLeft: '35px',
+          marginBottom: '20px',
+          }}>
           Software Engineer
-        </h3>
-      </Box>
+          </h3>
+        </Box>
+      </Collapse>
     </AppBar>
   )
 }

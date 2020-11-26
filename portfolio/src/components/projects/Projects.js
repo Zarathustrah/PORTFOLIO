@@ -40,7 +40,7 @@ export default function Projects() {
       <Screened />
     </Grid>
     <Grid item xs={12}>
-      <Skills />
+      <Skills checked={checked} />
     </Grid>
     <Grid item xs={12} sm={6} id='about'>
       <About />

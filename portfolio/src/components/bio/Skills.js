@@ -1,6 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
-import { Box, Grid } from '@material-ui/core'
+import { Box, Collapse, Grid } from '@material-ui/core'
 import { IconContext } from "react-icons"
 
 import {
@@ -42,6 +42,8 @@ const useStyles = makeStyles({
     fontSize: '8px',
     textAlign: 'center',
     margin: '20px',
+    marginBottom: '0',
+    marginTop: '0'
     // padding: '5px'
     // border: '1px solid',
     // borderRadius: '12.5%'
@@ -51,10 +53,11 @@ const useStyles = makeStyles({
   }
 })
 
-export default function Skills() {
+export default function Skills({ checked }) {
   const classes = useStyles()
 
   return (
+  <Collapse in={checked} {...(checked ? { timeout: 1000 } : {})}>
     <div className={classes.root}>
       <Grid
         container
@@ -126,5 +129,6 @@ export default function Skills() {
         </IconContext.Provider>
       </Grid>
   </div>
+</Collapse>
   )
 }
