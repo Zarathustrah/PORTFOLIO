@@ -23,7 +23,7 @@ const useStyles = makeStyles({
     '&:hover': {
       opacity: '0.9',
     },
-    transition: '0.2s'
+    transition: '0.4s'
   }
 
 })

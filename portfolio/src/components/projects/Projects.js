@@ -1,6 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
-import { Box } from '@material-ui/core'
+// import { Box } from '@material-ui/core'
 import useWindowPosition from '../../hooks/useWindowPosition'
 import Grid from '@material-ui/core/Grid'
 import Nalu from './Nalu'
@@ -13,13 +13,7 @@ import Skills from '../bio/Skills'
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-  },
-  // paper: {
-  //   padding: theme.spacing(1),
-  //   textAlign: 'center',
-  //   color: 'white',
-  //   backgroundColor: '#188DA5'
-  // },
+  }
 }))
 
 

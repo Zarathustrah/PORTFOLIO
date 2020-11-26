@@ -6,10 +6,8 @@ export default function useWindowPosition(id) {
   useLayoutEffect(() => {
     function updatePosition() {
       const offetSetHeight = window.document.getElementById(id).offsetHeight;
-      console.log('windpageOffset',window.pageYOffset,offetSetHeight)
-      if (window.pageYOffset > offetSetHeight * 2.5) {
+      if (window.pageYOffset > offetSetHeight * 3.2) {
         setAnimation(true);
-        console.log(setAnimation)
       }
     }
     window.addEventListener('scroll', updatePosition);

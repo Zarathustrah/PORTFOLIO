@@ -29,6 +29,10 @@ const useStyles = makeStyles({
     backgroundColor: '#1f26ff'
   },
   wrapper: {
+    // display: 'flex',
+    // flexDirection: 'column',
+    // justifyContent: 'center',
+    // alignItems: 'center',
     paddingTop: '5px',
   },
   icon: {
@@ -57,7 +61,7 @@ export default function Skills({ checked }) {
   const classes = useStyles()
 
   return (
-  <Collapse in={checked} {...(checked ? { timeout: 1000 } : {})}>
+  <Collapse in={checked} {...(checked ? { timeout: 1500 } : {})}>
     <div className={classes.root}>
       <Grid
         container
@@ -125,6 +129,10 @@ export default function Skills({ checked }) {
           <div className={classes.icon}>
             <SiGithub />
             <p className={classes.text}>GitHub</p>
+          </div>
+          <div className={classes.icon}>
+            <SiHeroku />
+            <p className={classes.text}>Heroku</p>
           </div>
         </IconContext.Provider>
       </Grid>

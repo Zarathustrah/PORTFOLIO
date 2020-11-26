@@ -1,6 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/styles'
-import { Typography, Box, Grid } from '@material-ui/core'
+import { Box, Grid } from '@material-ui/core'
 import { IconContext } from "react-icons"
 
 import { 
@@ -35,7 +35,7 @@ const useStyles = makeStyles({
     '&:hover': {
       opacity: '0.9',
     },
-    transition: '0.2s',
+    transition: '0.4s',
     // paddingBottom: '80px'
   },
   icon: {

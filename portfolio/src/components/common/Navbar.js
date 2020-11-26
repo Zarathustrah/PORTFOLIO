@@ -16,6 +16,9 @@ const useStyles = makeStyles(() =>  ({
   buttonStyle: {
     color: 'white',
     fontSize: '12px'
+  },
+  subtitle: {
+
   }
 }))
 
@@ -49,10 +52,9 @@ export default function Navbar() {
       </Toolbar>
       <Collapse
         in={checked}
-        {...(checked ? { timeout: 1000 } : {})}
-        collapsedHeight={50}
-      >
-        <Box id='a'>
+        {...(checked ? { timeout: 1500 } : {})}
+        collapsedHeight={70}>
+        <Box id='a' className={classes.subtitle}>
           <h3 style={{ 
           marginLeft: '35px',
           marginBottom: '20px',
