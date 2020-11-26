@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
 import { AppBar, Toolbar, Typography, Button, Box, Collapse } from '@material-ui/core/'
+import MenuIcon from '@material-ui/icons/Menu'
 import useMediaQuery from '@material-ui/core/useMediaQuery'
 import { Link as Scroll } from 'react-scroll'
 
@@ -27,11 +28,22 @@ export default function Navbar() {
   const classes = useStyles()
   const theme = useTheme()
   const isMobile = useMediaQuery(theme.breakpoints.down('xs'))
-  console.log(isMobile)
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+
+
   const [checked, setChecked] = useState(false)
   useEffect(() => {
     setChecked(true)
   }, [])
+
+  const handleMenu = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 
   return(
     <AppBar 
