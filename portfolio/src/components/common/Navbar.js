@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
 import { AppBar, Toolbar, Typography, Button, Box, Collapse, IconButton, Menu, MenuItem } from '@material-ui/core/'
 import MenuIcon from '@material-ui/icons/Menu'
@@ -28,15 +28,9 @@ const useStyles = makeStyles((theme) =>  ({
 export default function Navbar() {
   const classes = useStyles()
   const theme = useTheme()
-  const isMobile = useMediaQuery(theme.breakpoints.down('xs'))
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
-
-
-  const [checked, setChecked] = useState(false)
-  useEffect(() => {
-    setChecked(true)
-  }, [])
 
   const handleMenu = (event) => {
     setAnchorEl(event.currentTarget);
@@ -95,7 +89,7 @@ export default function Navbar() {
           </>
           ) : (
             <>
-            <Scroll to='projects' smooth={true}>
+          <Scroll to='projects' smooth={true}>
             <Button className={classes.buttonStyle}>Projects</Button>
           </Scroll>
           <Scroll to='about' smooth={true}>
@@ -109,19 +103,6 @@ export default function Navbar() {
         }
         </div>
       </Toolbar>
-      <Collapse
-          in={checked}
-          {...(checked ? { timeout: 1500 } : {})}
-          collapsedHeight={70}>
-          <Box id='a'>
-            <h3 style={{ 
-            marginLeft: '35px',
-            marginBottom: '20px',
-            }}>
-            Software Engineer
-            </h3>
-          </Box>
-        </Collapse>
     </AppBar>
   )
 }

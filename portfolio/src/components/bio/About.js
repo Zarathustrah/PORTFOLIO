@@ -1,6 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/styles'
-import { Typography, Box, CssBaseline } from '@material-ui/core'
+import { Typography, Box } from '@material-ui/core'
 
 
 const useStyles = makeStyles({
@@ -20,6 +20,7 @@ const useStyles = makeStyles({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    textAlign: 'center',
     opacity: '0',
     '&:hover': {
       opacity: '0.9',
@@ -34,7 +35,6 @@ export default function About() {
 
   return (
     <Box className={classes.root}>
-      <CssBaseline />
       <div className={classes.projectInfo}>
         <h1>Bio</h1>
         <p>Add in description here</p>

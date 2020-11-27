@@ -32,6 +32,7 @@ const useStyles = makeStyles({
     justifyContent: 'center',
     alignItems: 'center',
     opacity: '0',
+    textAlign: 'center',
     '&:hover': {
       opacity: '0.9'
     },

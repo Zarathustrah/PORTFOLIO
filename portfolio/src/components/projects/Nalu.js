@@ -31,6 +31,7 @@ const useStyles = makeStyles({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    textAlign: 'center',
     opacity: '0',
     '&:hover': {
       opacity: '0.9',

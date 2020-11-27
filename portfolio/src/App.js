@@ -1,11 +1,13 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/styles'
 import Navbar from './components/common/Navbar'
+import Home from './components/bio/Home'
 import Projects from './components/projects/Projects'
 
 const useStyles = makeStyles({
 root: {
-  backgroundColor: '#ff0127'
+  backgroundColor: '#ff0127',
+  fontFamily: ['Stalinist One', 'cursive']
 }
 })
 
@@ -16,6 +18,7 @@ export default function App() {
   return (
     <div className={classes.root}>
       <Navbar />
+      <Home />
       <Projects />
     </div>
   )
