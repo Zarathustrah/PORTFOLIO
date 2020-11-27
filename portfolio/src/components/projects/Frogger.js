@@ -15,7 +15,7 @@ import { FaExternalLinkSquareAlt } from "react-icons/fa"
 
 
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   root: {
     height: '300px',
     background: `url('/images/Frogger.jpg')`,
@@ -26,7 +26,6 @@ const useStyles = makeStyles({
   projectInfo: {
     height: '300px',
     background: '#1f26ff',
-    color: 'white',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -51,9 +50,23 @@ const useStyles = makeStyles({
     '&:hover': {
       color: '#ff0127',
     },
+  },
+  heading: {
+    [theme.breakpoints.between('xs', 'sm')]: {
+      fontSize: '20px',
+      marginTop: '30px'
+    }
+
+  },
+  subheading: {
+    margin: '15px',
+    [theme.breakpoints.between('xs', 'sm')]: {
+      fontSize: '12px',
+    }
+
   }
 
-})
+}))
 
 export default function Frogger() {
   const classes = useStyles()
@@ -61,8 +74,9 @@ export default function Frogger() {
   return (
     <Box className={classes.root}>
       <div className={classes.projectInfo}>
-        <h1>Frogger</h1>
-        <p>One-week solo build of a classic game in vanilla JS</p>
+        <Typography variant='h4' className={classes.heading}>Frogger</Typography>
+        <Typography variant='subtitle1' className={classes.subheading}>One-week solo build of a classic game in vanilla JS
+        </Typography>
         <Grid 
         container
         direction='row'

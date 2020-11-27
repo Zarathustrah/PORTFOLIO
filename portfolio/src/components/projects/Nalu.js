@@ -1,6 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/styles'
-import { Box, Grid } from '@material-ui/core'
+import { Box, Grid, Typography } from '@material-ui/core'
 import { IconContext } from "react-icons"
 
 import { 
@@ -15,7 +15,7 @@ import { FaExternalLinkSquareAlt } from "react-icons/fa"
 
 
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   root: {
     height: '300px',
     background: `url('/images/Nalu.jpg')`,
@@ -26,7 +26,6 @@ const useStyles = makeStyles({
   projectInfo: {
     height: '300px',
     background: '#1f26ff',
-    color: 'white',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -52,10 +51,21 @@ const useStyles = makeStyles({
     '&:hover': {
       color: '#ff0127',
     },
+  },
+  heading: {
+    [theme.breakpoints.between('xs', 'sm')]: {
+      fontSize: '20px',
+      marginTop: '30px'
+    }
+
+  },
+  subheading: {
+    margin: '15px',
+    [theme.breakpoints.between('xs', 'sm')]: {
+      fontSize: '12px',
+    }
   }
-
-
-})
+}))
 
 export default function Nalu() {
   const classes = useStyles()
@@ -63,8 +73,8 @@ export default function Nalu() {
   return (
     <Box className={classes.root}>
       <div className={classes.projectInfo}>
-        <h1>Nalu</h1>
-        <p>One-week group build of a MERN full-stack surfing community app</p>
+        <Typography variant='h4' className={classes.heading}>Nalu</Typography>
+        <Typography variant='subtitle1' className={classes.subheading}>One-week group build of a MERN full-stack surfing community app</Typography>
         <Grid 
         container
         direction='row'

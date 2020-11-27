@@ -22,9 +22,8 @@ import {
   SiJavascript
 } from "react-icons/si"
 
-import { FaExternalLinkSquareAlt } from "react-icons/fa"
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   root: {
     backgroundColor: '#1f26ff',
   },
@@ -59,9 +58,13 @@ const useStyles = makeStyles({
     textAlign: 'center',
     paddingTop: '25px',
     paddingBottom: '8px',
-    color: 'white'
+    color: 'white',
+    [theme.breakpoints.between('xs', 'sm')]: {
+      fontSize: '20px'
+    }
+
   }
-})
+}))
 
 export default function Skills({ checked }) {
   const classes = useStyles()
@@ -69,7 +72,7 @@ export default function Skills({ checked }) {
   return (
   <Collapse in={checked} {...(checked ? { timeout: 1500 } : {})}>
     <div className={classes.root}>
-      <Typography variant='h5' className={classes.title}>Skills</Typography>
+      <Typography variant='h4' className={classes.title}>Skills</Typography>
       <Grid
         container
         direction='row'

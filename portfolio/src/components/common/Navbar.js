@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) =>  ({
   menuButton: {
     marginRight: theme.spacing(2),
     flex: 1,
-  },
+  }
  }))
 
 export default function Navbar() {

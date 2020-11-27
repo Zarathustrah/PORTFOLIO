@@ -13,7 +13,7 @@ import { FaExternalLinkSquareAlt } from "react-icons/fa"
 
 
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   root: {
     height: '300px',
     background: `url('/images/Screened.jpg')`,
@@ -24,7 +24,6 @@ const useStyles = makeStyles({
   projectInfo: {
     height: '300px',
     background: '#1f26ff',
-    color: 'white',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -49,9 +48,22 @@ const useStyles = makeStyles({
     '&:hover': {
       color: '#ff0127',
     },
+  },
+  heading: {
+    [theme.breakpoints.between('xs', 'sm')]: {
+      fontSize: '20px',
+      marginTop: '30px'
+    }
+
+  },
+  subheading: {
+    margin: '15px',
+    [theme.breakpoints.between('xs', 'sm')]: {
+      fontSize: '12px',
+    }
   }
 
-})
+}))
 
 export default function Screened() {
   const classes = useStyles()
@@ -59,8 +71,9 @@ export default function Screened() {
   return (
     <Box className={classes.root}>
       <div className={classes.projectInfo}>
-        <h1>Director Dictator</h1>
-        <p>Two-day group hackathon to build a movie app</p>
+        <Typography variant='h4' className={classes.heading}>Director Dictator</Typography>
+        <Typography variant='subtitle1' className={classes.subheading}>Two-day group hackathon to build a React movie app
+        </Typography>
         <Grid 
         container
         direction='row'
