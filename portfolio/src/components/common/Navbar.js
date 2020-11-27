@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
-import { AppBar, Toolbar, Typography, Button, Box, Collapse } from '@material-ui/core/'
+import { AppBar, Toolbar, Typography, Button, Box, Collapse, IconButton, Menu, MenuItem } from '@material-ui/core/'
 import MenuIcon from '@material-ui/icons/Menu'
 import useMediaQuery from '@material-ui/core/useMediaQuery'
 import { Link as Scroll } from 'react-scroll'
 
 
 
-const useStyles = makeStyles(() =>  ({
+const useStyles = makeStyles((theme) =>  ({
   typography: {
     flex: 1,
   }, 
@@ -19,10 +19,11 @@ const useStyles = makeStyles(() =>  ({
     color: 'white',
     fontSize: '12px'
   },
-  subtitle: {
-
-  }
-}))
+  menuButton: {
+    marginRight: theme.spacing(2),
+    flex: 1,
+  },
+ }))
 
 export default function Navbar() {
   const classes = useStyles()
@@ -56,29 +57,71 @@ export default function Navbar() {
         <Typography className={classes.typography}>
           <Button className={classes.buttonTitle}>Dan Price</Button>
         </Typography>
-        <Scroll to='projects' smooth={true}>
-          <Button className={classes.buttonStyle}>Projects</Button>
-        </Scroll>
-        <Scroll to='about' smooth={true}>
-          <Button className={classes.buttonStyle}>About</Button>
-        </Scroll>
-        <Scroll to='contact' smooth={true}>
-          <Button className={classes.buttonStyle}>Contact</Button>
-        </Scroll>
+        <div>
+          {isMobile ? (
+          <>
+            <IconButton 
+            edge="start" 
+            className={classes.menuButton} 
+            color="inherit" 
+            aria-label="menu"
+            onClick={handleMenu}>
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorEl}
+              anchorOrigin={{
+                vertical: 'top',
+                horizontal: 'right',
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: 'top',
+                horizontal: 'right',
+              }}
+              open={open}
+              onClose={handleClose}>
+              <Scroll to='projects' smooth={true}>
+                <MenuItem onClick={handleClose}>Projects</MenuItem>
+              </Scroll>
+              <Scroll to='about' smooth={true}>
+                <MenuItem onClick={handleClose}>About</MenuItem>
+              </Scroll>
+              <Scroll to='contact' smooth={true}>
+                <MenuItem onClick={handleClose}>Contact</MenuItem>
+              </Scroll>
+            </Menu>
+          </>
+          ) : (
+            <>
+            <Scroll to='projects' smooth={true}>
+            <Button className={classes.buttonStyle}>Projects</Button>
+          </Scroll>
+          <Scroll to='about' smooth={true}>
+            <Button className={classes.buttonStyle}>About</Button>
+          </Scroll>
+          <Scroll to='contact' smooth={true}>
+            <Button className={classes.buttonStyle}>Contact</Button>
+          </Scroll>
+        </>    
+          )        
+        }
+        </div>
       </Toolbar>
       <Collapse
-        in={checked}
-        {...(checked ? { timeout: 1500 } : {})}
-        collapsedHeight={70}>
-        <Box id='a' className={classes.subtitle}>
-          <h3 style={{ 
-          marginLeft: '35px',
-          marginBottom: '20px',
-          }}>
-          Software Engineer
-          </h3>
-        </Box>
-      </Collapse>
+          in={checked}
+          {...(checked ? { timeout: 1500 } : {})}
+          collapsedHeight={70}>
+          <Box id='a'>
+            <h3 style={{ 
+            marginLeft: '35px',
+            marginBottom: '20px',
+            }}>
+            Software Engineer
+            </h3>
+          </Box>
+        </Collapse>
     </AppBar>
   )
 }

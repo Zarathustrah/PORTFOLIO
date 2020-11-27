@@ -1,6 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
-import { Box, Collapse, Grid } from '@material-ui/core'
+import { Box, Collapse, Grid, Typography } from '@material-ui/core'
 import { IconContext } from "react-icons"
 
 import {
@@ -26,7 +26,7 @@ import { FaExternalLinkSquareAlt } from "react-icons/fa"
 
 const useStyles = makeStyles({
   root: {
-    backgroundColor: '#1f26ff'
+    backgroundColor: '#1f26ff',
   },
   wrapper: {
     // display: 'flex',
@@ -54,6 +54,12 @@ const useStyles = makeStyles({
   },
   text: {
     paddingTop: '7px'
+  },
+  title: {
+    textAlign: 'center',
+    paddingTop: '25px',
+    paddingBottom: '8px',
+    color: 'white'
   }
 })
 
@@ -63,6 +69,7 @@ export default function Skills({ checked }) {
   return (
   <Collapse in={checked} {...(checked ? { timeout: 1500 } : {})}>
     <div className={classes.root}>
+      <Typography variant='h5' className={classes.title}>Skills</Typography>
       <Grid
         container
         direction='row'
@@ -112,7 +119,7 @@ export default function Skills({ checked }) {
           </div>
           <div className={classes.icon}>
             <SiPostgresql />
-            <p className={classes.text}>PostgresSQL</p>
+            <p className={classes.text}>PostgreSQL</p>
           </div>
           <div className={classes.icon}>
             <SiYarn />
