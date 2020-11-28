@@ -13,7 +13,11 @@ const useStyles = makeStyles((theme) =>  ({
   }, 
   buttonTitle: {
     color: 'white',
-    fontSize: '25px'
+    fontSize: '25px',
+    [theme.breakpoints.between('xs', 'sm')]: {
+      fontSize: '20px',
+      marginLeft: '26px'
+    }
   },
   buttonStyle: {
     color: 'white',
