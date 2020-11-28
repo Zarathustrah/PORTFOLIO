@@ -1,6 +1,6 @@
 import React from 'react'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
-import { AppBar, Toolbar, Typography, Button, Box, Collapse, IconButton, Menu, MenuItem } from '@material-ui/core/'
+import { AppBar, Toolbar, Typography, Button, IconButton, Menu, MenuItem } from '@material-ui/core/'
 import MenuIcon from '@material-ui/icons/Menu'
 import useMediaQuery from '@material-ui/core/useMediaQuery'
 import { Link as Scroll } from 'react-scroll'

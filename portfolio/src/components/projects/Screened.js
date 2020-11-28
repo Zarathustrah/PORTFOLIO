@@ -50,6 +50,7 @@ const useStyles = makeStyles(theme => ({
     },
   },
   heading: {
+    marginTop: '10px',
     [theme.breakpoints.between('xs', 'sm')]: {
       fontSize: '20px',
       marginTop: '30px'
