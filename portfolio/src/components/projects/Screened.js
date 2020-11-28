@@ -44,6 +44,9 @@ const useStyles = makeStyles(theme => ({
     fontSize: '8px',
     textAlign: 'center',
     margin: '15px',
+  },
+  anchor: {
+    textDecoration: 'none',
     color: 'white',
     '&:hover': {
       color: '#ff0127',
@@ -96,15 +99,14 @@ export default function Screened() {
         justify='center'>
         <IconContext.Provider value={{ size: '1.8rem' }}>
           <div className={classes.linkIcon}>
-            <a href='https://github.com/Zarathustrah/SEI-Project-3' target='_blank' rel='noopener  noreferrer'>
-            <SiGithub
-            href='https://github.com/Zarathustrah/SEI-Project-3'
-            target='_blank'
-            />
+            <a className={classes.anchor} href='https://github.com/Zarathustrah/SEI-Project-3' target='_blank' rel='noopener  noreferrer'>
+            <SiGithub />
             </a>
           </div>
           <div className={classes.linkIcon}>
+            <a className={classes.anchor} href='https://github.com/Zarathustrah/SEI-Project-3' target='_blank' rel='noopener  noreferrer'>
             <FaExternalLinkSquareAlt />
+            </a>
           </div>
         </IconContext.Provider>
         </Grid>
