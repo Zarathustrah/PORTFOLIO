@@ -56,13 +56,13 @@ export default function About() {
       <div className={classes.projectInfo}>
         <Typography variant='h4' className={classes.heading}>About Me</Typography>
         <Box className={classes.subheading}>
-          <Typography variant='subtitle1' className={classes.subheading}>I am a born-again Junior Software Engineer whose world has been transformed by the magic of programming.<br></br>
+          <Typography variant='subtitle1' className={classes.subheading}>I am a born-again junior software engineer whose world has been transformed by the magic of programming.<br></br>
           <br></br>
           
           I recently completed the Software Engineering Immersive course at General Assembly, while previously I launched and ran fine dining restaurants in London, taking them from the start-up phase to fully operational businesses.<br></br>
           <br></br>
           
-           My goal now is to bring my dedication and creativity to a team as a Junior Developer.
+           My goal now is to bring my dedication and creativity to a team as a junior developer.
           </Typography>
         </Box>
         
