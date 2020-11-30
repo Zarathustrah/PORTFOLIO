@@ -12,11 +12,10 @@ import {
 import { FaExternalLinkSquareAlt } from "react-icons/fa"
 
 
-
 const useStyles = makeStyles(theme => ({
   root: {
     height: '300px',
-    background: `url('/images/Screened.jpg')`,
+    background: `url('https://i.ibb.co/jDfr7SS/Screened.jpg')`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     backgroundPosition: 'center',

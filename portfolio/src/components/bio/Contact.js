@@ -2,11 +2,10 @@ import React from 'react'
 import { makeStyles } from '@material-ui/styles'
 import { Typography, Box } from '@material-ui/core'
 
-
 const useStyles = makeStyles(theme => ({
   root: {
     height: '300px',
-    background: `url('/images/Contact.jpg')`,
+    background: `url('https://i.ibb.co/NZKsSc3/Contact.jpg')`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     backgroundPosition: 'center',

@@ -4,6 +4,8 @@ import { Typography, Box, Grid } from '@material-ui/core'
 import { IconContext } from "react-icons"
 
 
+
+
 import { 
   SiCss3,
   SiHtml5,
@@ -18,7 +20,7 @@ import { FaExternalLinkSquareAlt } from "react-icons/fa"
 const useStyles = makeStyles(theme => ({
   root: {
     height: '300px',
-    background: `url('/images/Frogger.jpg')`,
+    background: `url('https://i.ibb.co/jw0R9bp/Frogger.jpg')`,    
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
@@ -50,6 +52,13 @@ const useStyles = makeStyles(theme => ({
     '&:hover': {
       color: '#ff0127',
     },
+  },
+  anchor: {
+    textDecoration: 'none',
+    color: 'white',
+    '&:hover': {
+      color: '#ff0127',
+    }
   },
   heading: {
     marginTop: '10px',
@@ -101,17 +110,18 @@ export default function Frogger() {
         container
         direction='row'
         justify='center'>
-        <IconContext.Provider value={{ size: '1.8rem' }}>
+       <IconContext.Provider value={{ size: '1.8rem' }}>
           <div className={classes.linkIcon}>
-            <SiGithub 
-            href='https://github.com/Zarathustrah/SEI-Project-3'
-            target='_blank'
-            />
+            <a className={classes.anchor} href='https://github.com/Zarathustrah/FROGGER/blob/main/README.md' target='_blank' rel='noopener  noreferrer'>
+            <SiGithub />
+            </a>
           </div>
           <div className={classes.linkIcon}>
+            <a className={classes.anchor} href='http://naluwave.herokuapp.com/' target='_blank' rel='noopener  noreferrer'>
             <FaExternalLinkSquareAlt />
+            </a>
           </div>
-        </IconContext.Provider>
+      </IconContext.Provider>
         </Grid>
       </div>
     </Box>
