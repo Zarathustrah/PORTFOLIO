@@ -47,6 +47,7 @@ const useStyles = makeStyles(theme => ({
     fontSize: '8px',
     textAlign: 'center',
     margin: '15px',
+    marginTop: '25px',
     color: 'white',
     '&:hover': {
       color: '#ff0127',
@@ -69,7 +70,10 @@ export default function Contact() {
     <Box className={classes.root}>
       <div className={classes.projectInfo}>
         <Typography variant='h4' className={classes.heading}>Contact</Typography>
-        <Typography variant='subtitle1' className={classes.subheading}>danielparkerprice@gmail.com</Typography>
+        <Typography 
+          variant='subtitle1' 
+          className={classes.subheading}>
+          <a href='mailto:danielparkerprice@gmail.com' className={classes.anchor}>danielparkerprice@gmail.com</a></Typography>
         <Grid 
         container
         direction='row'

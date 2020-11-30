@@ -1,6 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
-import { Box, Collapse, Grid, Typography } from '@material-ui/core'
+import { Collapse, Grid, Typography } from '@material-ui/core'
 import { IconContext } from "react-icons"
 
 import {

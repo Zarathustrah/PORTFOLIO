@@ -6,7 +6,6 @@ import useMediaQuery from '@material-ui/core/useMediaQuery'
 import { Link as Scroll } from 'react-scroll'
 
 
-
 const useStyles = makeStyles((theme) =>  ({
   typography: {
     flex: 1,
@@ -26,6 +25,10 @@ const useStyles = makeStyles((theme) =>  ({
   menuButton: {
     marginRight: theme.spacing(2),
     flex: 1,
+  },
+  mobileMenu: {
+    background: '#ff0127',
+    color: 'white'  
   }
  }))
 
@@ -81,13 +84,13 @@ export default function Navbar() {
               open={open}
               onClose={handleClose}>
               <Scroll to='projects' smooth={true}>
-                <MenuItem onClick={handleClose}>Projects</MenuItem>
+                <MenuItem onClick={handleClose} className={classes.mobileMenu}>Projects</MenuItem>
               </Scroll>
               <Scroll to='about' smooth={true}>
-                <MenuItem onClick={handleClose}>About</MenuItem>
+                <MenuItem onClick={handleClose} className={classes.mobileMenu}>About</MenuItem>
               </Scroll>
               <Scroll to='contact' smooth={true}>
-                <MenuItem onClick={handleClose}>Contact</MenuItem>
+                <MenuItem onClick={handleClose} className={classes.mobileMenu}>Contact</MenuItem>
               </Scroll>
             </Menu>
           </>

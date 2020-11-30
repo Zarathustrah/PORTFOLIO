@@ -62,7 +62,7 @@ export default function About() {
           I recently completed the Software Engineering Immersive course at General Assembly, while previously I launched and ran fine dining restaurants in London, taking them from the start-up phase to fully operational businesses.<br></br>
           <br></br>
           
-           My goal now is to bring my dedication and creativity to a team as a junior developer.
+           My goal now is to bring my dedication and creativity to a team as a Junior Developer.
           </Typography>
         </Box>
         
