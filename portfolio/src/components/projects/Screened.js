@@ -103,7 +103,7 @@ export default function Screened() {
             </a>
           </div>
           <div className={classes.linkIcon}>
-            <a className={classes.anchor} href='https://github.com/Zarathustrah/SEI-Project-3' target='_blank' rel='noopener  noreferrer'>
+            <a className={classes.anchor} href='https://directordictator.netlify.app/' target='_blank' rel='noopener  noreferrer'>
             <FaExternalLinkSquareAlt />
             </a>
           </div>
