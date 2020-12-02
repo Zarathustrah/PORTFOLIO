@@ -27,19 +27,19 @@ export default function Projects() {
     <Grid item xs={12} id='projects'>
       <Nalu />
     </Grid>
-    <Grid item xs={12} sm={6}>
+    <Grid item sm={6} xs={12}>
       <Frogger />    
     </Grid>
-    <Grid item xs={12} sm={6}>
+    <Grid item sm={6} xs={12}>
       <Screened />
     </Grid>
     <Grid item xs={12}>
       <Skills checked={checked} />
     </Grid>
-    <Grid item xs={12} sm={6} id='about'>
+    <Grid item sm={6} xs={12} id='about'>
       <About />
     </Grid>
-    <Grid item xs={12} sm={6} id='contact'>
+    <Grid item sm={6} xs={12} id='contact'>
       <Contact />
     </Grid>
   </Grid>
