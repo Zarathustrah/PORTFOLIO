@@ -79,7 +79,7 @@ export default function Nalu() {
   return (
     <Box className={classes.root}>
       <div className={classes.projectInfo}>
-        <Typography variant='h4' className={classes.heading}>NaluWalu</Typography>
+        <Typography variant='h4' className={classes.heading}>Nalu</Typography>
         <Typography variant='subtitle1' className={classes.subheading}>One-week group build of a MERN full-stack surfing community app</Typography>
         <Grid 
         container
