@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <Collapse
           in={checked}
-          {...(checked ? { timeout: 1500 } : {})}
+          {...(checked ? { timeout: 2000 } : {})}
           collapsedHeight={50}>
           <div id='a'>
             <Typography variant='subtitle2' className={classes.text}>Software Engineer</Typography>

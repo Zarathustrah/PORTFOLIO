@@ -70,7 +70,7 @@ export default function Skills({ checked }) {
   const classes = useStyles()
 
   return (
-  <Collapse in={checked} {...(checked ? { timeout: 1500 } : {})}>
+  <Collapse in={checked} {...(checked ? { timeout: 2000 } : {})}>
     <div className={classes.root}>
       <Typography variant='h4' className={classes.title}>Skills</Typography>
       <Grid

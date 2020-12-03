@@ -117,7 +117,7 @@ export default function Frogger() {
             </a>
           </div>
           <div className={classes.linkIcon}>
-            <a className={classes.anchor} href='http://naluwave.herokuapp.com/' target='_blank' rel='noopener  noreferrer'>
+            <a className={classes.anchor} href='https://zarathustrah.github.io/FROGGER/' target='_blank' rel='noopener  noreferrer'>
             <FaExternalLinkSquareAlt />
             </a>
           </div>
