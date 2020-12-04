@@ -2,4 +2,6 @@
 
 ![](portfolio-demo.gif)
 
-# visible
+# Summary
+
+<li> Does this bullet point work?
