@@ -24,4 +24,4 @@ To begin, I started with a simple wireframe and focused on how build the site pr
 
 # Future Improvements
 
-<li> Although getting to grips with Material UI was a steep learning curve, it was certainly worth the effort; it's a hugely enjoyable framework to use and very intuitive. However, I will continue to work on refining my code and make it more programatic. 
+<li> Although getting to grips with Material UI was a steep learning curve, it was certainly worth the effort; it's a hugely enjoyable framework to use and very intuitive. However, I will continue to work on refining my code. 
