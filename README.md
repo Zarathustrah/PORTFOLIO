@@ -1,5 +1,5 @@
 # 🏆 PORTFOLIO 🏆
 
-![](portfolio-demo.mp4)
+![](portfolio-demo.gif)
 
 # visible
