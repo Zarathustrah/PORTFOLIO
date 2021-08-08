@@ -24,6 +24,7 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    textAlign: 'justify',
     opacity: '0',
     '&:hover': {
       opacity: '0.9',

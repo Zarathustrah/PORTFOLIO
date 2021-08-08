@@ -3,10 +3,10 @@ import { createMuiTheme } from '@material-ui/core/styles'
 
 const theme = createMuiTheme({
 typography: {
-  fontFamily: ['Stalinist One', 'cursive']
+  fontFamily: ['Sigmar One', 'cursive']
 },
 background: {
-  default: '#F8ECC2'
+  default: '#ff0127'
 }
 
 }) 

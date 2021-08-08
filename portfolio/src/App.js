@@ -7,7 +7,7 @@ import Projects from './components/projects/Projects'
 const useStyles = makeStyles({
 root: {
   backgroundColor: '#ff0127',
-  fontFamily: ['Stalinist One', 'cursive'],
+  fontFamily: ['Sigmar One', 'cursive'],
   color: 'white'
 }
 })

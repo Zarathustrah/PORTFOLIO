@@ -6,11 +6,11 @@ import { Typography, Box } from '@material-ui/core'
 const useStyles = makeStyles(theme => ({
   root: {
     height: '300px',
-    background: `url('https://i.ibb.co/3sph8Pr/About.jpg')`,
+    background: `url('https://i.ibb.co/pnxpnjW/Portrait.jpg')`,
     backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
+    backgroundSize: '350px',
     backgroundPosition: 'center',
-    backgroundColor: 'rgba(0,0,0,0.5)',
+    backgroundColor: 'rgba(255,255,255)',
   },
   projectInfo: {
     height: '300px',

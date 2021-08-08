@@ -52,7 +52,11 @@ const useStyles = makeStyles(theme => ({
     // borderRadius: '12.5%'
   },
   text: {
-    paddingTop: '7px'
+    paddingTop: '7px',
+    fontSize: '12px',
+    [theme.breakpoints.between('xs', 'sm')]: {
+      fontSize: '10px'
+    }
   },
   title: {
     textAlign: 'center',
@@ -70,8 +74,9 @@ export default function Skills({ checked }) {
   const classes = useStyles()
 
   return (
-  <Collapse in={checked} {...(checked ? { timeout: 2000 } : {})}>
+  
     <div className={classes.root}>
+      <Collapse in={checked} {...(checked ? { timeout: 2000 } : {})}>
       <Typography variant='h4' className={classes.title}>Skills</Typography>
       <Grid
         container
@@ -146,7 +151,7 @@ export default function Skills({ checked }) {
           </div>
         </IconContext.Provider>
       </Grid>
-  </div>
-</Collapse>
+      </Collapse>
+    </div>
   )
 }

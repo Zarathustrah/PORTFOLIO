@@ -80,7 +80,7 @@ export default function Nalu() {
     <Box className={classes.root}>
       <div className={classes.projectInfo}>
         <Typography variant='h4' className={classes.heading}>Nalu</Typography>
-        <Typography variant='subtitle1' className={classes.subheading}>One-week group build of a MERN full-stack surfing community app</Typography>
+        <Typography variant='subtitle1' className={classes.subheading}>One-week team build of a MERN-stack surfing app</Typography>
         <Grid 
         container
         direction='row'

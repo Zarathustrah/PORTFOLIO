@@ -32,8 +32,8 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    opacity: '0',
     textAlign: 'center',
+    opacity: '0',
     '&:hover': {
       opacity: '0.9'
     },
@@ -85,8 +85,10 @@ export default function Frogger() {
     <Box className={classes.root}>
       <div className={classes.projectInfo}>
         <Typography variant='h4' className={classes.heading}>Frogger</Typography>
-        <Typography variant='subtitle1' className={classes.subheading}>One-week solo build of a classic game in vanilla JS
-        </Typography>
+          <Box className={classes.subheading}>
+            <Typography variant='subtitle1'>One-week solo build of a classic game in vanilla JS
+            </Typography>
+          </Box>
         <Grid 
         container
         direction='row'

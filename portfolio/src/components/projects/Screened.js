@@ -75,7 +75,7 @@ export default function Screened() {
     <Box className={classes.root}>
       <div className={classes.projectInfo}>
         <Typography variant='h4' className={classes.heading}>Director Dictator</Typography>
-        <Typography variant='subtitle1' className={classes.subheading}>Two-day group hackathon to build a React movie app
+        <Typography variant='subtitle1' className={classes.subheading}>Two-day team build of a film app in React
         </Typography>
         <Grid 
         container
